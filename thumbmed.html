@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0070f3">
+    <meta name="description" content="Thumbmed Project Details - Frontend Developer Portfolio">
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+    <title>Thumbmed - Project Details</title>
+</head>
+
+<body class="font-sans text-gray-900 dark:text-white bg-white dark:bg-dark-background transition-colors duration-300">
+    <!-- Dark mode background gradients -->
+    <div class="fixed inset-0 -z-10 opacity-0 dark:opacity-100 transition-opacity duration-500 pointer-events-none">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10"></div>
+    </div>
+
+    <!-- Header -->
+    <header
+        class="fixed w-full top-0 z-50 bg-white/95 dark:bg-dark-background/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-xl font-extrabold">MIT Maker Portofolio</span>
+                    <span class="text-primary text-2xl ml-1">●</span>
+                </div>
+                <ul class="hidden md:flex space-x-8">
+                    <li>
+                        <a href="index.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html#projects"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
+                    </li>
+                </ul>
+                <div class="flex items-center space-x-4">
+                    <button id="themeToggle" class="">
+                        <i class="fa-solid fa-moon text-gray-600 dark:text-gray-400"></i>
+                    </button>
+                    <button class="md:hidden p-2" id="menuToggle">
+                        <div class="w-6 h-5 flex flex-col justify-between">
+                            <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+                            <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+                            <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="fixed inset-0 bg-white dark:bg-dark-background z-50 transform translate-x-full transition-transform duration-300 md:hidden">
+        <div class="container mx-auto px-4 h-full flex flex-col">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-xl font-extrabold">MIT Maker Portofolio</span>
+                    <span class="text-primary text-2xl ml-1">●</span>
+                </div>
+                <button id="closeMenu" class="p-2">
+                    <i class="fa-solid fa-square-xmark text-gray-600 dark:text-gray-400 text-2xl"></i>
+                </button>
+            </div>
+            <ul class="flex-1 flex flex-col justify-center items-center space-y-8">
+                <li>
+                    <a href="index.html"
+                        class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#about"
+                        class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</a>
+                </li>
+                <li>
+                    <a href="index.html#projects"
+                        class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Project Details Section -->
+    <section id="project-details" class="py-24 pt-32">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Thumbmed Project Details</h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">
+                Explore the various aspects of the Thumbmed project
+            </p>
+
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/image-1.jpeg" alt="Hardware Setup" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">Issue 1</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            A high volume of patients in local clinic
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/image-3.png" alt="AI Dashboard" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">Issue 2</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                           The ineffecincy of manual patient data management by doctors
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/image-4.jpg" alt="Data Management" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">Rural Healthcare Access</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Rural area with limited access to healthcare resources
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/image-5.jpg" alt="Biometric Security" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">Arduino</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Used to bridge the sensors and the system and make them more stable
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/image-6.jpg" alt="Real-time Monitoring" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">AS608 fingerprint sensor</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Used to identify patients and ensure data privacy
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/image-8.jpg" alt="Cloud Integration" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">Cable</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Used to connect the sensors and the Arduino to ensure stable data transmission
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/image-9.jpg" alt="Mobile Access" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">Case</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Used to house the components and make the device portable and easy to use
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/item-1.jpg" alt="Emergency Response" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">Emergency Response</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Rapid emergency response system that alerts medical teams and provides critical patient information during emergencies.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/item-1.jpg" alt="Data Analytics" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">Data Analytics</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Advanced data analytics to identify trends, predict health outcomes, and improve overall healthcare delivery.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/item-1.jpg" alt="User Interface Design" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">User Interface Design</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Intuitive and user-friendly interface designed for ease of use by medical professionals with varying technical expertise.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/item-1.jpg" alt="API Integration" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">API Integration</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Robust API integration allowing seamless connection with existing hospital systems and third-party healthcare applications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/item-1.jpg" alt="Compliance and Privacy" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">Compliance and Privacy</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Full compliance with healthcare regulations and privacy standards to protect patient data and maintain legal requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 13 -->
+                <div
+                    class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-64 relative">
+                        <img src="../assets/item-1.jpg" alt="Scalability" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                    </div>
+                    <div class="w-full md:w-3/5 p-6">
+                        <h3 class="text-xl font-bold mb-4">Scalability</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Scalable architecture designed to handle growing patient databases and expanding healthcare facility requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 dark:bg-dark-background-secondary py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <span class="text-xl font-extrabold">Muhammad Zaydan Ghazi</span>
+                    <span class="text-primary text-2xl ml-1">●</span>
+                </div>
+                <ul class="flex flex-wrap justify-center gap-6 mb-0">
+                    <li>
+                        <a href="index.html#about"
+                            class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html#projects"
+                            class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
+                    </li>
+                </ul>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center text-gray-600 dark:text-gray-400 text-sm">
+                <p>&copy; 2025 Muhammad Zaydan Ghazi MIT Maker Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
